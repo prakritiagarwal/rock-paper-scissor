@@ -1,7 +1,9 @@
 const hands = ['rock' , 'paper', 'scissors'];
 function getHand(){
-    return hands[parseInt(Math.random()*10)%3];  
+    let randomNumberBetween0And3 = parseInt(Math.random()*10)%3;
+    return hands[randomNumberBetween0And3];  
 }
+
 let player1=
 { 
     name: 'player1', getHand: function() { return getHand(); }
